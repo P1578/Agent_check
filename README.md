@@ -37,10 +37,3 @@ report = verify(trace, SPECS, aliases=ALIASES,
                 judge=RubricJudge(AnthropicBackend()))   # judge opcional
 print(report.passed, report.summary())
 ```
-
-## Mapa desde el repo anterior
-
-`validate_trace.py`→`structure.py` · `hallucination_detector.py`→`grounding.py` · `tool_call_parser.py`→`tools.py` ·
-`mini_rag.py`→`retrieval.py` (BM25) · `llm_judge.py`→`judge.py` · `react_agent.py`+`self_correction.py`→`agent.py`
-(el error de herramienta ahora es real y se devuelve al modelo) · `router.py`→`agent.route` · `final_agent.py`→`__main__ demo`.
-`planner.py` se eliminó: eran plantillas fijas sin lógica; el bucle ReAct lo reemplaza.
