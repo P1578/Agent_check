@@ -1,0 +1,12 @@
+[project]
+name = "agentcheck"
+version = "0.1.0"
+description = "Verificador de traces de agentes: estructura, grounding contra evidencia, juez LLM validado"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
